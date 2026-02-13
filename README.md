@@ -1,64 +1,84 @@
-#  E-Commerce Shopping 
+# 🛒 E-Commerce Shopping  
 
-> A brief one-liner about your project — what it does and why it’s useful.  
-> _Example: A simple, responsive web app that helps users find the perfect meme based on their mood._  
+> A responsive React + Redux shopping cart application that allows users to browse products, add items to cart, and manage quantities with real-time total price updates.
 
 ---
 
 ## 🪞 Overview  
-Write a short paragraph describing your project:  
-- What problem it solves  
-- Who it’s for  
-- What makes it unique or fun  
 
-_Example:_  
-This web app allows users to interact with dynamic content using JavaScript. It focuses on simplicity, responsiveness, and clean UI design principles.  
+This E-Commerce Shopping app solves the problem of managing cart state efficiently in a frontend application. It allows users to browse products fetched from a live API, add them to a cart, update quantities dynamically, and view real-time total pricing.
+
+The project is built for learners and frontend developers who want to understand modern state management using **Redux Toolkit** with asynchronous API handling.  
+
+What makes it unique is the use of **temporary cart updates (`tempItems`)** before applying changes — simulating a real-world cart editing experience similar to production e-commerce platforms.
 
 ---
 
 ## 🚀 Features  
-✨ Key things your app can do:  
 
-- 🎯 Feature 1  
-- 🧠 Feature 2  
-- 📱 Feature 3  
-- 🌙 Feature 4  
+✨ Key things this app can do:  
+
+- 🛍️ Fetch products dynamically from an external API  
+- 🛒 Add and remove products from cart  
+- 🔄 Update cart quantities with temporary state management  
+- 💰 Auto-calculate total price in real time  
+- 🔗 Client-side routing using React Router  
+- 📦 Global state management using Redux Toolkit  
+- ⚡ Async API handling using `createAsyncThunk`  
 
 ---
 
 ## 🧱 Tech Stack  
+
 | Technology | Purpose |
-|-------------|----------|
-| **HTML5** | Structure of the app |
-| **CSS3** | Styling and responsiveness |
-| **JavaScript (ES6)** | Logic and interactivity |
-| *(Optional)* **API / Library** | If any external tools were used |
+|------------|----------|
+| **React.js** | UI building using component-based architecture |
+| **Redux Toolkit** | Global state management |
+| **React Redux** | Connecting Redux with React |
+| **React Router DOM** | Client-side routing |
+| **Axios** | API requests |
+| **Fake Store API** | Product data source |
+| **CSS3** | Styling and layout |
 
 ---
 
 ## 📚 What We Have Studied  
-
-Here are the key JavaScript concepts or tools covered while building this project 🧩   
+  
 
 > Concepts practiced include:  
-> 
+
+- Redux Toolkit (`createSlice`, `configureStore`)  
+- Async state handling using `createAsyncThunk`  
+- Extra reducers for API lifecycle states (pending, fulfilled, rejected)  
+- React hooks (`useEffect`, `useDispatch`, `useSelector`)  
+- Derived state calculation using `Array.reduce()`  
+- Controlled inputs in React  
+- Conditional rendering  
+- Client-side routing with React Router  
+- State synchronization between `items` and `tempItems`  
 
 ---
 
 ## 🌿 Lessons Learned  
-Reflect briefly on your takeaways:  
 
-> - 
+- How to structure scalable Redux slices  
+- Handling asynchronous API calls in Redux  
+- Managing derived state efficiently  
+- Preventing unnecessary re-fetching using status flags  
+- Building predictable state flow in a real-world cart system  
+- Separating temporary UI state from committed global state  
 
 ---
 
 ## 🖼️ Screenshots / Demo  
 
-![App Screenshot](./images/demo.png)  
+![App Screenshot](./src/assets/demo-1.png)  
+![App Screenshot](./src/assets/demo-2.png)  
 
-🔗 **Live Demo:** [https://your-demo-link.vercel.app](https://your-demo-link.vercel.app)  
+🔗 **Live Demo:** https://your-demo-link.vercel.app  
 
 ---
+
 
 ## 💫 Author  
 👩‍💻 **Created by [Aliya](https://github.com/aliyasyeddd)**  
