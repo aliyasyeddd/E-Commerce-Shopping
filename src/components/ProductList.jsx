@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import NavBar from "./NavBar";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../features/ShopCart/productSlice";
+import { addToCart } from "../features/ShopCart/cartSlice";
 
 function ProductList() {
   const { items: products, status } = useSelector((state) => state.products);
@@ -37,7 +38,7 @@ function ProductList() {
                 : product.title}
             </h2>
             <p>Price: ${product.price}</p>
-            <button>Add to Cart</button>
+            <button onClick={() => dispatch(addToCart(product))}>Add to Cart</button>
           </div>
         ))}
       </div>
