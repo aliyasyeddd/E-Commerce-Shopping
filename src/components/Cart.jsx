@@ -16,6 +16,7 @@ function Cart() {
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  
   //id = payload
   const handleRemoveItem = (id) => {
     dispatch(removeFromCart(id));
