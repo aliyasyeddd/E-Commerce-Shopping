@@ -6,9 +6,7 @@
 
 ## 🪞 Overview  
 
-This E-Commerce Shopping app solves the problem of managing cart state efficiently in a frontend application. It allows users to browse products fetched from a live API, add them to a cart, update quantities dynamically, and view real-time total pricing.
-
-The project is built for learners and frontend developers who want to understand modern state management using **Redux Toolkit** with asynchronous API handling.  
+This E-Commerce Shopping app solves the problem of managing cart state efficiently in a frontend application. It allows users to browse products fetched from a live API, add them to a cart, update quantities dynamically, and view real-time total pricing. 
 
 What makes it unique is the use of **temporary cart updates (`tempItems`)** before applying changes — simulating a real-world cart editing experience similar to production e-commerce platforms.
 
